@@ -63,12 +63,12 @@ int lsh_cd(char **args)
 }
 
 /**
- * main - The entry point of the shell program.
+ * lsh_exit - Exit the shell program.
+ * @args: The arguments passed to the command (unused).
  *
- * Return: Returns 0 on successful execution.
+ * Return: Returns 0 to indicate the shell should exit.
  */
-int main(void)
+int lsh_exit(__attribute__((unused)) char **args)
 {
-    /* Main logic of the shell program can be implemented here */
-    return (0);
+	return (0);
 }
