@@ -1,6 +1,8 @@
 #ifndef SHELL_H
 #define SHELL_H
 
+#define BUFFER_SIZE 1024
+
 #include <stdio.h>
 #include <signal.h>
 #include <unistd.h>
@@ -33,5 +35,7 @@ char *gpath(char **environ, char *input);
 /* memory_handler.c */
 int arrfix(char **ring);
 
+/* paraser.c */
+char **parse_input(char *input);
 
 #endif /* ifndef SHELL_H */
